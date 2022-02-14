@@ -42,3 +42,92 @@ class App extends Component{
 }
 
 export default App;
+
+
+
+//form from home.js
+<form className="container">
+                <div className="form-row">
+                    <div className="form-group col-md-6">
+                        <label htmlFor="inputCustomerName"> Customer</label>
+                        <input type="email" className="form-control" id="inputCustomerName" placeholder="Enter Customer Name"></input>
+                    </div>
+                    <div className="form-group col-md-6">
+                        <label htmlFor="inputCustomerAddress"  >Address</label>
+                        <input type="text" className="form-control" id="inputAddress" placeholder="Enter the address of the customer"></input>
+                    </div>
+                    <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck"/>
+      <label class="form-check-label" for="gridCheck">
+        Check me if address of examination is same as the customer address
+      </label>
+    </div>
+  </div>
+                </div>
+            </form>
+
+///container 1 thorough examinarions
+  
+        <div className="form-outline mb-4">
+            <input type="text" id="form7Example3" className="form-control" />
+            <label className="form-label" htmlFor="form7Example3"  value={element.id || ""} onChange={e => handleChange(index, e)}>Customer Name</label>
+          </div> 
+
+          <div className="form-outline mb-4">
+            <textarea className="form-control" id="form7Example7" rows="4"></textarea>
+            <label className="form-label" htmlFor="form7Example7">Address</label>
+          </div>
+          <div className="form-group">
+    <div className="form-check">
+      <input className="form-check-input" type="checkbox" id="gridCheck" />
+      <label className="form-check-label" htmlFor="gridCheck">
+        Check m if examination address is same as the customer address
+      </label>
+    </div>
+  </div>
+
+          <div className="row mb-4">
+            <div className="col">
+              <div className="form-outline">
+                <input type="text" id="form7Example1" className="form-control" />
+                <label className="form-label" htmlFor="form7Example1">Certificate Number</label>
+              </div>
+            </div>
+            <div className="col">
+              <div className="form-outline">
+                <input type="text" id="form7Example2" className="form-control" />
+                <label className="form-label" htmlFor="form7Example2">Job Number</label>
+              </div>
+            </div>
+            <div className="col">
+              <div className="form-outline">
+                <input type="date" id="form7Example1" className="form-control" />
+                <label className="form-label" htmlFor="form7Example1">Date Of Report</label>
+              </div>
+            </div>
+          </div>
+          <div className="row mb-4">
+            <div className="col">
+              <div className="form-outline">
+                <input type="text" id="form7Example1" className="form-control" />
+                <label className="form-label" htmlFor="form7Example1">Customer Number</label>
+              </div>
+            </div>
+            <div className="col">
+              <div className="form-outline">
+                <input type="text" id="form7Example2" className="form-control" />
+                <label className="form-label" htmlFor="form7Example2">Report Prepared By</label>
+              </div>
+            </div>
+            <div className="col">
+              <div className="form-outline">
+                <input type="text" id="form7Example1" className="form-control" />
+                <label className="form-label" htmlFor="form7Example1">Colour Code</label>
+              </div>
+            </div>
+          </div>
+
+          //bgcolor
+          #1b75bb
+          

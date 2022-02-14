@@ -1,4 +1,5 @@
 const path = require('path');
+const { SourceMapDevToolPlugin} = require('webpack')
 
 module.exports = {
   entry: path.resolve(__dirname, './src/index.js'),
@@ -7,7 +8,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ['babel-loader','source-map-loader']
       },
     ],
   },

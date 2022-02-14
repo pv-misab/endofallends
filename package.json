@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "startt": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,17 +15,30 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.3",
+    "source-map-loader": "^3.0.1",
     "webpack": "^5.68.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
+    "@auth0/auth0-react": "^1.9.0",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.1",
     "axios": "^0.25.0",
+    "css-loader": "^6.6.0",
+    "express": "^4.17.2",
+    "less-loader": "^10.2.0",
     "path": "^0.12.7",
+    "post-loader": "^2.0.0",
     "react": "^17.0.2",
+    "react-date-picker": "^8.4.0",
+    "react-datepicker": "^4.6.0",
+    "react-dater": "^1.6.0",
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-router": "^6.2.1",
-    "react-router-dom": "^6.2.1"
+    "react-router-dom": "^6.2.1",
+    "style-loader": "^3.3.1"
   }
 }

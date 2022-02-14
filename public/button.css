@@ -1,33 +1,5 @@
-.loginpageh1{
-    color:#fff;
-}
 
-footer {
-    color:#fff;
-    width:100%;
-    text-align: center;
-    position:absolute;
-    
-}
-
-.centerdiv{
-    display:grid;
-    justify-content: center;
-    width: 100%;
-}
-
-.desc{
-    width:1080px;
-}
-
-
-
-.main-hr {
-    width: 30%;
-    border: none;
-    border-top: 1px solid #c3c3c3;
-  }
-  .icon-btn {
+  .button-icon {
     width: 50px;
     height: 50px;
     border: 1px solid #cdcdcd;
@@ -37,11 +9,11 @@ footer {
     position: relative;
     transition: width 0.2s ease-in-out;
   }
-  .add-btn:hover {
+  .add-button:hover {
     width: 120px;
   }
-  .add-btn::before,
-  .add-btn::after {
+  .add-button::before,
+  .add-button::after {
     transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
     content: "";
     position: absolute;
@@ -50,34 +22,34 @@ footer {
     top: calc(50% - 2px);
     background: red;
   }
-  .add-btn::after {
+  .add-button::after {
     right: 14px;
     overflow: hidden;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
-  .add-btn::before {
+  .add-button::before {
     left: 14px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
   }
-  .icon-btn:focus {
+  .button-icon:focus {
     outline: none;
   }
-  .btn-txt {
+  .button-text {
     opacity: 0;
     transition: opacity 0.2s;
   }
-  .add-btn:hover::before,
-  .add-btn:hover::after {
+  .add-button:hover::before,
+  .add-button:hover::after {
     width: 4px;
     border-radius: 2px;
   }
-  .add-btn:hover .btn-txt {
+  .add-button:hover .button-text {
     opacity: 1;
   }
-  .add-icon::after,
-  .add-icon::before {
+  .icon-add::after,
+  .icon-add::before {
     transition: all 0.2s ease-in-out;
     content: "";
     position: absolute;
@@ -87,25 +59,24 @@ footer {
     background: red;
     overflow: hidden;
   }
-  .add-icon::before {
+  .icon-add::before {
     left: 22px;
     border-top-left-radius: 2px;
     border-bottom-left-radius: 2px;
   }
-  .add-icon::after {
+  .icon-add::after {
     right: 22px;
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
   }
-  .add-btn:hover .add-icon::before {
+  .add-button:hover .icon-add::before {
     left: 15px;
     height: 4px;
     top: calc(50% - 2px);
   }
-  .add-btn:hover .add-icon::after {
+  .add-button:hover .icon-add::after {
     right: 15px;
     height: 4px;
     top: calc(50% - 2px);
   }
   
-

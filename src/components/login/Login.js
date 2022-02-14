@@ -1,17 +1,43 @@
-import React, {Component} from 'react';
+import React, { useState } from 'react';
 import Helmet from 'react-helmet';
-import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
-class Login extends Component {
+
+
+const Login = () => {
+
+  let navigate = useNavigate();
+
+  const [ username, setUsername ] = useState("");
+  const [ password, setPassword ] = useState("");
    
+  function handleUsernameChanged(event) {
+
+    setUsername(event.target.value)
+
+  }
+
+  function handlePasswordChanged(event) {
+    setPassword(event.target.value)
+
+  }
+
+  function handleSubmitted(e) {
+    
+    if (username=="admin" && password=="admin")
+    {
+      navigate(`/about`);
+    }
    
-    render(){
+  }
+   
+
+      
 
 
+      
 
-
-
-
+        
         return (
         <>
         <Helmet bodyAttributes={{style:'background-color: #1b75bb'}}></Helmet>
@@ -30,13 +56,13 @@ class Login extends Component {
                 <form action="#!">
                 <div className="form-group">
                     <label htmlFor="email" className="sr-only">Username</label>
-                    <input type="text" name="email" id="email" className="form-control" placeholder="Username"></input>
+                    <input type="text" name="email" id="email" className="form-control" placeholder="Username" onChange={handleUsernameChanged.bind(this)} value={username}></input>
                 </div>
                   <div className="form-group mb-4">
                     <label htmlFor="password" className="sr-only">Password</label>
-                    <input type="password" name="password" id="password" className="form-control" placeholder="***********"></input>
+                    <input type="password" name="password" id="password" className="form-control" placeholder="***********" onChange={handlePasswordChanged.bind(this)} value={password}></input>
                   </div>
-                    <input name="login" id="login" className="btn btn-block login-btn mb-4" type="button" value="Login"></input>
+                    <input name="login" id="login" className="btn btn-block login-btn mb-4" type="button" value="Login" onClick={handleSubmitted.bind(this)}></input>
                 </form>
                 
                 </div>
@@ -46,10 +72,14 @@ class Login extends Component {
     </div>
   </main>
   
-  
+               <div>
+
+               </div>
+          
+
+               
         </>
             );
         }
-}
 
 export default Login;
